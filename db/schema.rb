@@ -14,13 +14,13 @@ ActiveRecord::Schema[7.0].define(version: 0) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "departments", id: :integer, default: -> { "nextval('departments_department_id_seq'::regclass)" }, force: :cascade do |t|
+  create_table "department", id: :integer, default: -> { "nextval('departments_department_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "department_name", limit: 255
     t.text "location"
     t.boolean "in_stock"
     t.text "holding_power"
     t.datetime "created_at", null: false
-    t.datetime "update_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "items", id: :serial, force: :cascade do |t|
