@@ -225,6 +225,7 @@
           null,
           1,
           1,
+          1,
           null,
           null
         ]
@@ -250,25 +251,42 @@
           null
         ]
       },
-      "/Users/corypowell/turing/2mod/projects/produce_manager/spec/models/item_spec.rb": {
+      "/Users/corypowell/turing/2mod/projects/produce_manager/app/controllers/departments_controller.rb": {
         "lines": [
           1,
           null,
           1,
           0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
           0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
           null,
           null
         ]
       },
-      "/Users/corypowell/turing/2mod/projects/produce_manager/app/models/item.rb": {
+      "/Users/corypowell/turing/2mod/projects/produce_manager/app/controllers/application_controller.rb": {
         "lines": [
-          1,
           1,
           null
         ]
       }
     },
-    "timestamp": 1693350704
+    "timestamp": 1693869723
   }
 }
