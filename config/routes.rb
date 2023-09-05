@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 
   get "/", to: "welcome#index"
   get "/departments", to: "departments#index"
+  get "/departments/:id", to: "departments#show"
   
 end

@@ -10,29 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 0) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_04_213037) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "department", id: :integer, default: -> { "nextval('departments_department_id_seq'::regclass)" }, force: :cascade do |t|
-    t.string "department_name", limit: 255
-    t.text "location"
+  create_table "departments", force: :cascade do |t|
+    t.string "department_name"
+    t.string "location"
     t.boolean "in_stock"
-    t.text "holding_power"
+    t.integer "holding_power"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "items", id: :serial, force: :cascade do |t|
-    t.string "item_name", limit: 255
-    t.integer "department_id"
-    t.integer "PLU"
-    t.text "color"
-    t.boolean "organic"
-    t.text "country_origin"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_foreign_key "items", "departments", name: "items_department_id_fkey"
 end
